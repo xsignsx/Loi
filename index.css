@@ -1,0 +1,88 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.g-buttons {
+    color: rgb(34, 34, 34);
+    position: relative;
+    display: flex;
+    font-size: 13px;
+    justify-content: flex-end;
+    min-width: 181px;
+    margin: 15px 30px;
+}
+.g-buttons > * {
+    align-self: center;
+    display: inline-block;
+    margin-left: 15px;
+}
+.g-apps {
+    background-image: url("https://web.archive.org/web/20191130234759im_/https://ssl.gstatic.com/gb/images/i1_1967ca6a.png");
+    width: 30px;
+    height: 30px;
+    background-size: 528px 68px;
+    background-position: -132px -38px;
+}
+.g-profile {
+    background-image: url("https://lh3.googleusercontent.com/-Rh5C9QILAf4/AAAAAAAAAAI/AAAAAAAAAAA/AAKWJJN2o6l-kao5fTEYiiK-AIwTGzm4-Q.CMID/s32-c/photo.jpg  ");
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.center {
+    margin: auto;
+    text-align: center;
+}
+.center > img {
+    display: block;
+    height: 175px / 2;
+    margin: 150px auto 40px auto;
+    width: 490px / 2;
+}
+.searchBar {
+    display: block;
+    margin: 0 auto 50px auto;
+}
+.searchBar > input {
+    border: none;
+    width: 480px;
+}
+.searchBar::after {
+    content: "";
+    padding: 3px 16px;
+    background-image: url("https://web.archive.org/web/20191130234759im_/https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png");
+    background-size: 25px;
+    background-position: 50%;
+}
+button {
+    background: none;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 150px;
+}
+button:hover {
+    border: 1px solid grey;
+}
+.bottom {
+    position: fixed;
+    bottom: 0px;
+    font-size: 14px;
+    width: 100%;
+}
+#abh { 
+    float: left;
+}
+#abh > * {
+    display: inline-block;
+    height: 30px;
+}
+#pts {
+    float: right;
+    margin-right: 20px;
+}
+#pts > * {
+    display: inline-block;
+    height: 30px;
+}
