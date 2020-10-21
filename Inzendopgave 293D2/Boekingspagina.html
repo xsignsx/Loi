@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Accommodatie boeken</h1>
+    <p>
+      Hier kun je de accommodatie reserveren, of nog wat
+      <a href="#fotos">foto's bekijken.</a>
+    </p>
+    <section>
+      <h2>Adresgegevens</h2>
+      <form
+        action="http://jkorpela.fi/cgi-bin/echo.cgi"
+        id="form-1"
+        method="POST"
+      >
+        <label for="naam">Naam:* </label
+        ><input type="text" id="name" name="naam" required /><br /><br />
+        <label for="adres">Adres:* </label
+        ><input type="text" id="adres" name="adres" required /><br /><br />
+        <label for="postcode">Postcode:* </label
+        ><input
+          type="text"
+          id="postcode"
+          name="postcode"
+          required
+          placeholder="1234 AA"
+        /><br /><br />
+        <label for="woonplaats">Woonplaats:* </label
+        ><input
+          type="text"
+          id="woonplaats"
+          name="woonplaats"
+          required
+        /><br /><br />
+        <label for="telefoonnummer">Telefoonnummer:* </label
+        ><input
+          type="text"
+          id="telefoonnummer"
+          name="telefoonnummer"
+          required
+        /><br /><br />
+        <label for="emailadres">E-mailadres: </label
+        ><input
+          type="email"
+          placeholder="een@emailadres.nl"
+          id="emailadres"
+          name="emailadres"
+        /><br /><br />
+      </form>
+    </section>
+    <section>
+      <h2>Reservering</h2>
+      <label for="pax">Aantal personen:* </label
+      ><input
+        form="form-1"
+        required
+        type="number"
+        min="1"
+        max="10"
+        id="pax"
+        name="pax"
+      /><br /><br />
+      <label for="aankomst">Aankomstdatum:* </label
+      ><input
+        form="form-1"
+        type="date"
+        id="aankomst"
+        name="aankomst"
+        required
+      /><br /><br />
+      <label for="duur">Verblijfsduur: </label
+      ><input
+        form="form-1"
+        type="range"
+        id="duur"
+        name="duur"
+        min="2"
+        max="20"
+        step="2"
+      />
+      <span id="verblijfsduur">12 dagen</span>
+      <br /><br />
+      <label for="verzorging">Verzorging:</label
+      ><select form="form-1" id="verzorging" name="verzorging">
+        <option value="logies">logies</option>
+        <option value="logies-met-ontbijt">logies met ontbijt</option>
+        <option value="halfpension">halfpension</option>
+        <option value="volpension">volpension</option></select
+      ><br />
+      <p>Annuleringsverzekering:</p>
+      <input
+        form="form-1"
+        type="radio"
+        id="ja"
+        name="annuleringsverzekering"
+        value="ja"
+      />
+      <label for="Ja">Ja</label
+      ><input
+        form="form-1"
+        type="radio"
+        id="nee"
+        name="annuleringsverzekering"
+        value="nee"
+      /><label for="nee">Nee</label><br /><br />
+      <label for="opmerkingen">Opmerkingen</label><br /><textarea
+        form="form-1"
+        id="opmerkingen"
+        name="opmerkingen"
+        rows="6"
+        cols="40"
+      ></textarea
+      ><br /><br />
+      <button type="submit" value="Submit" form="form-1">Submit</button><br />
+    </section>
+    <section id="fotos">
+      <h2>Foto's</h2>
+      <figure>
+        <img
+          src="https://static.wixstatic.com/media/14a9ba_44c8c26a28e74b86a451aa35f16ef4ad~mv2.jpg/v1/fill/w_752,h_476,fp_0.50_0.50,q_90/14a9ba_44c8c26a28e74b86a451aa35f16ef4ad~mv2.webp"
+          alt="dronephoto Panvaree"
+        />
+        <figcaption>Het resort van bovenaf</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="https://static.wixstatic.com/media/14a9ba_bc2107e429f9407d95a0a61bf3dae497~mv2_d_1920_1282_s_2.png/v1/fill/w_752,h_502,fp_0.50_0.50,q_95/14a9ba_bc2107e429f9407d95a0a61bf3dae497~mv2_d_1920_1282_s_2.webp"
+          alt="'Lobby' Panvaree"
+        />
+        <figcaption>De 'lobby' in de avond</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="https://static.wixstatic.com/media/14a9ba_217ecde761234a408580aebf49574aca~mv2.jpg/v1/fill/w_752,h_422,fp_0.50_0.50,q_90/14a9ba_217ecde761234a408580aebf49574aca~mv2.webp"
+          alt="mmer Panvaree"
+        />
+        <figcaption>Vanuit het water</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="https://static.wixstatic.com/media/14a9ba_4bdd6fadd22640928163617c625af81c~mv2.jpg/v1/fill/w_752,h_501,fp_0.50_0.50,q_90/14a9ba_4bdd6fadd22640928163617c625af81c~mv2.webp"
+          alt="dronephoto Panvaree"
+        />
+        <figcaption>Vanuit het resort zelf</figcaption>
+      </figure>
+    </section>
+    <section>
+      <h2>Video</h2>
+      <video
+        controls
+        src="./Panvaree-video.mp4"
+        poster="https://static.wixstatic.com/media/14a9ba_4289d734276d41cfae15d9679dde43ac~mv2.jpg/v1/fill/w_752,h_564,fp_0.50_0.50,q_90/14a9ba_4289d734276d41cfae15d9679dde43ac~mv2.webp"
+      ></video>
+    </section>
+  </body>
+  <script>
+    const duur = document.getElementById(`duur`);
+    const verblijfsduur = document.getElementById(`verblijfsduur`);
+    duur.addEventListener(`input`, () => {
+      verblijfsduur.innerHTML = duur.value + ` dagen`;
+    });
+  </script>
+</html>
+
