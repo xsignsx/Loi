@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+section {
+  border: 4px solid silver;
+  margin-bottom: 1.5rem;
+  max-width: 1200px;
+  text-align: center;
+  width: 90vw;
+}
+
+figure {
+  border: 2px solid silver;
+  margin: 0 auto 1.5rem auto;
+  max-width: 600px;
+  padding: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.hero,
+.bordspellen table {
+  border: 2px solid black;
+  margin: 0;
+  vertical-align: top;
+  width: 50%;
+}
+
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1589804845133-49b5e06cc415?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80');
+  background-position: 50%;
+  background-size: cover;
+  display: inline-block;
+  height: 220px;
+}
+
+.bordspellen p {
+  background-color: white;
+  box-shadow: 0px 0px 0 30px rgba(255, 255, 255, 0.6);
+  margin: 83px auto;
+  padding: 1rem;
+  width: fit-content;
+}
+
+.bordspellen table {
+  display: inline-table;
+}
+
+.first-col {
+  background-color: #e0c6ad;
+  width: 40%;
+}
+
+.corvette {
+  background-color: #e7b482;
+}
+
+.tulip-tree {
+  background-color: #e7a23d;
+}
+
+.dash {
+  width: 1rem;
+}
+
+.bordspellen th {
+  font-weight: 700;
+  background-color: rgb(209, 227, 241);
+}
+
+.bordspellen td:first-of-type {
+  text-align: left;
+}
+
+.bord {
+  border: 2rem solid rgb(52, 52, 52);
+  height: 700px;
+  margin: 1rem auto;
+  padding: 2rem;
+  width: 700px;
+}
+
+.schaakbord table {
+  border: 2px solid red;
+  border-collapse: collapse;
+  height: 100%;
+  width: 100%;
+}
+
+.schaakbord tr {
+  height: 12.5%;
+}
+
+.schaakbord td {
+  font-size: 3rem;
+  width: 12.5%;
+}
+
+.schaakbord tr:nth-of-type(even) td:nth-of-type(odd),
+.schaakbord tr:nth-of-type(odd) td:nth-of-type(even) {
+  background-color: rgb(154, 154, 154);
+}
