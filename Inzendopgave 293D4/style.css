@@ -26,11 +26,14 @@ main {
   max-width: 1024px;
 }
 
+article {
+  padding-bottom: 20px;
+}
+
 hr {
   background: linear-gradient(to right, black, white, black);
   border: none;
   height: 2px;
-  margin: 20px 0;
 }
 
 .nav {
