@@ -1,0 +1,58 @@
+.achievement__table {
+  border-collapse: collapse;
+  margin: auto;
+  margin-bottom: 3rem;
+  max-width: 1024px;
+  width: calc(100vw - 2rem);
+}
+
+thead {
+  background-color: black;
+}
+
+th {
+  border-left: 1px solid var(--light);
+  border-right: 1px solid var(--light);
+}
+
+tbody tr td:last-child {
+  text-align: right;
+}
+
+tbody tr td:nth-child(3) {
+  text-align: center;
+}
+
+tr {
+  height: 3rem;
+}
+
+tr:nth-of-type(even) {
+  background-color: #221c19;
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color: #362d28;
+}
+
+td {
+  padding: .25rem 1rem;
+}
+
+.place {
+  color: #cac7c298;
+  text-align: center;
+}
+
+.p1 {
+  color: #b6986b;
+}
+
+.p2 {
+  color: silver;
+}
+
+.p3 {
+  color: #cd7f32;
+}
+

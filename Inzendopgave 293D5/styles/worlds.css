@@ -1,0 +1,122 @@
+.group-stage__container {
+  padding: 0 1rem;
+}
+
+.team  {
+  display: grid;
+  gap: .25rem;
+  margin: 1rem 0;
+  padding: .25rem;
+  position: relative;
+}
+
+.group-stage__container .team {
+  grid-template-columns: 4rem 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 1rem 0 1rem 4rem;
+}
+
+.group-stage__container .team:nth-of-type(1),
+.group-stage__container .team:nth-of-type(2),
+.winner {
+  background-color: #362d28;
+}
+
+.group-stage__container .team:nth-of-type(3),
+.group-stage__container .team:nth-of-type(4),
+.loser {
+  background-color: #362d2880;
+  color: dimgrey;
+}
+
+.group-stage__container .team::before {
+  font-size: 3rem;
+  left: -3rem;
+  position: absolute;
+  top: .25rem;
+}
+
+.group-stage__container .team:nth-of-type(1)::before {
+  color: gold;
+  content: '1';
+}
+
+.group-stage__container .team:nth-of-type(2)::before {
+  color: silver;
+  content: '2';
+}
+
+.group-stage__container .team:nth-of-type(3)::before {
+  color: dimgrey;
+  content: '3';
+}
+
+.group-stage__container .team:nth-of-type(4)::before {
+  color: dimgrey;
+  content: '4';
+}
+
+.team__logo {
+  grid-row: span 2;
+}
+
+.team__name,
+.team__score {
+  margin: 0;
+}
+
+.group-stage__container .team__name {
+  align-self: end;
+  font-weight: 700;
+}
+
+
+.group-stage__container .team__score {
+  align-self: start;
+  font-size: .875rem;
+}
+
+section:not(.group-stage__container) {
+  padding: 1rem;
+}
+
+section:not(.group-stage__container) .team {
+  align-items: center;
+  font-weight: 700;
+  grid-template-rows: 100%;
+  grid-template-columns: 4rem 1fr 1fr;
+}
+
+section:not(.group-stage__container) .team__score {
+  justify-self: end;
+  padding-right: 2rem;
+}
+
+.champion {
+  color: #B6986B;
+}
+
+.match {
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  article {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(320px, 1fr));
+    justify-content: start;
+    overflow-x: scroll;
+    scrollbar-color: var(--light) var(--dark);
+  }
+
+  article .group-stage__container {
+    grid-column: span 3;
+    margin: auto;
+    width: 500px;
+  }
+
+  article h2 {
+    text-align: center;
+  }
+}
