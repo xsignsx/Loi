@@ -128,6 +128,25 @@ a {
   -o-border-radius: 2px;
 }
 
+.dropdown-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  padding: 0 1rem;
+  z-index: 1;
+}
+
+.dropdown-content > * {
+  width: 100%;
+}
+
+.dropdown-content.visible {
+  display: block;
+}
+
 .side-drawer {
   background-color: var(--dark);
   box-shadow: var(--s12dp);
@@ -208,6 +227,7 @@ footer {
   }
 
   .navbar__container,
+  .dropdown-menu:hover .dropdown-content,
   .medium {
     display: block;
   }
@@ -238,6 +258,18 @@ footer {
     border: 1px solid var(--light);
     cursor: pointer;
     font-weight: 700;
+  }
+
+  .dropdown-content {
+    background-color: var(--dark);
+    box-shadow: var(--s12dp);
+    display: none;
+    left: -25%;
+    max-width: initial;
+    padding: 0.5rem 0;
+    position: absolute;
+    width: 150%;
+    z-index: 1;
   }
 }
 
